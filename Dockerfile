@@ -5,9 +5,9 @@ MAINTAINER prashant.gaur91@gmail.com.com
 RUN mkdir /opt/tomcat/
 
 WORKDIR /opt/tomcat
-RUN curl -O http://apache.mirrors.ionfish.org/tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.zip
-RUN unzip apache-tomcat-8.5.15.zip
-RUN mv apache-tomcat-8.5.15/* /opt/tomcat/.
+RUN curl -O https://downloads.apache.org/tomcat/tomcat-8/v8.5.79/bin/apache-tomcat-8.5.79.zip
+RUN unzip apache-tomcat-8.5.79.zip
+RUN mv apache-tomcat-8.5.79/* /opt/tomcat/.
 RUN yum -y install java
 RUN java -version
 
