@@ -18,4 +18,4 @@ RUN curl -O -L https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWeb
 RUN chmod -R 777 /opt/tomcat/apache-tomcat-8.5.79
 #EXPOSE 8080
 
-CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+CMD ["/opt/tomcat/bin/catalina.sh", "run", "--host 0.0.0.0", "--disable-host-check"]
