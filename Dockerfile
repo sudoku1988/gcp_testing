@@ -5,10 +5,9 @@ MAINTAINER prashant.gaur91@gmail.com.com
 RUN mkdir /opt/tomcat/
 
 WORKDIR /opt/tomcat
-RUN curl -O https://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.40/bin/apache-tomcat-8.5.40.tar.gz
-RUN gunzip apache-tomcat-8.5.40.tar.gz
-RUN tar xvfz apache*.tar
-RUN mv apache-tomcat-8.5.40/* /opt/tomcat/.
+RUN curl -O http://apache.mirrors.ionfish.org/tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.zip
+RUN unzip apache-tomcat-8.5.15.zip
+RUN mv apache-tomcat-8.5.15/* /opt/tomcat/.
 RUN yum -y install java
 RUN java -version
 
