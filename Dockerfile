@@ -15,7 +15,7 @@ RUN java -version
 
 WORKDIR /opt/tomcat/webapps
 RUN curl -O -L https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war
-
+RUN chmod -R 777 /opt/tomcat/apache-tomcat-8.5.79
 EXPOSE 8080
 
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
