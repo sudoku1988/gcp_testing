@@ -1,6 +1,6 @@
 FROM centos:centos7
 
-MAINTAINER prashant.gaur91@gmail.com.com
+MAINTAINER prashant.gaur1991@gmail.com.com
 
 RUN mkdir /opt/tomcat/
 
